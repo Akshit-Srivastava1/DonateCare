@@ -1,0 +1,119 @@
+.page {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+}
+
+/* TOTAL MONEY CARD — full width banner */
+.total-card {
+  width: 100%;
+  background: linear-gradient(135deg, #4CAF50, #2196F3);
+  color: white;
+  padding: 28px 32px;
+  border-radius: 14px;
+  margin-bottom: 28px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-sizing: border-box;
+}
+
+.total-card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.9;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.total-card p {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* HORIZONTAL SECTIONS ROW */
+.sections-row {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+/* MAIN CARD — takes equal space */
+.card {
+  flex: 1;
+  min-width: 0;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  border: 1px solid #f0f0f0;
+  box-sizing: border-box;
+}
+
+.card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+/* INNER CARDS — stacked vertically inside each section */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.inner-card {
+  background: #f8f9fb;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  transition: box-shadow 0.2s;
+}
+
+.inner-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.inner-card p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+.inner-card p b {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* empty state */
+.empty-state {
+  color: #aaa;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .sections-row {
+    flex-direction: column;
+  }
+
+  .page {
+    padding: 20px;
+  }
+}

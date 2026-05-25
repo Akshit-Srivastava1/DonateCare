@@ -1,0 +1,65 @@
+.nearby-container {
+  padding: 40px 10px;
+}
+
+.nearby-container h2 {
+  margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* URGENT */
+.card.urgent {
+  border-left: 5px solid #ef4444;
+}
+
+/* EMPTY */
+.empty-card {
+  background: #f9fafb;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* TEXT */
+.card h4 {
+  margin-bottom: 6px;
+}
+
+.card p {
+  color: #4b5563;
+}
+
+.card span {
+  font-size: 12px;
+  color: gray;
+}
+
+/* STATES */
+.info {
+  color: #6b7280;
+}
+
+.error {
+  color: red;
+}
+
